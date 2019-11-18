@@ -1,0 +1,363 @@
+
+
+<html>
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/all.min.css"/>
+		<link rel="stylesheet" href="css/index_style.css"/>
+	
+		
+	</head>
+	<body>
+
+        <section id="myNav" class="border-bottom">
+            <div class="container">
+	       <nav  class="navbar navbar-expand-lg navbar-light bg-transparent w-75 m-auto pt-5 ">
+               <a class="navbar-brand text-dark nav-logo" href="#">
+                   <i class="fas fa-paw"></i>
+                   PET LAB</a>
+               
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   
+                   <span class="navbar-toggler-icon"></span>
+                   
+               </button>
+
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   
+                   <ul class="navbar-nav font-weight-bold ml-auto">
+ 
+                       <li class="nav-item text-uppercase nav-lis">
+                           <a class="nav-link " href="#home">home</a>
+                       </li> 
+                       <li class="nav-item text-uppercase nav-lis">
+                           <a class="nav-link" href="#profile">shipping</a>
+                       </li> 
+                       <li class="nav-item text-uppercase nav-lis">
+                           <a class="nav-link" href="#team">billing</a>
+                       </li> 
+                       <li class="nav-item text-uppercase nav-lis">
+                           <a class="nav-link" href="#gallery">receipt</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link cart" href="#">
+                               <i class="fas fa-shopping-cart text-primary "></i>
+                           </a>
+                       </li>		
+
+                   </ul>
+
+               </div>
+            </nav>
+            </div>
+        </section>
+        
+        <!-- 
+            -----------End Of Navbar--------------
+        -->
+
+        <section id="billing-info" class="container">
+            
+            <div class="row w-75 m-auto">
+            
+                <div class="col-lg-6">
+                
+                    <h6 class="pt-3 pb-2 text-muted">Customer informations > Payment method</h6>
+                    
+                    <button type="button" class="btn btn-warning px-4 py-2 myBtn">
+                        <img src="images/pp258.png" class="img-pp">
+                        <span class="blue-pay">Pay</span><span class="blue-pal">Pal</span>
+                    </button>
+                    
+                    <p class="or-line"><span class="span-or">Or</span></p>
+                    
+                    <form>
+                        
+                        <div class="row">
+
+                        
+                            <div class="col-lg-12 form-group">
+                                
+                                <h5>Contact information</h5>
+
+                                <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email" required>
+
+                            </div>
+                            
+                            
+                            <div class="form-group form-check col-lg-12 ml-3 pb-4 custom-control custom-checkbox">
+                                
+                                <input type="checkbox" class="custom-control-input" id="customCheck">
+                                
+                                <label class="custom-control-label" for="customCheck">Keep me up to date on news and exclusive offers</label>
+                              
+                            </div>
+                            
+                            <div class="col-lg-12 pb-1">
+                                <h5>Shipping Adress</h5>
+                            </div>  
+                            
+
+                            <div class="col-6 form-group">
+                               
+                                <input type="text" class="form-control" id="Fname" placeholder="First name" required>
+                                    
+                            </div>
+                            
+                            <div class="col-6 form-group">
+                               
+                                <input type="text" class="form-control" id="Lname" placeholder="Last name" required>
+                                    
+                            </div>
+                            
+                            <div class="col-lg-12 form-group">
+
+                                <input type="text" class="form-control" id="Adress" placeholder="Adress" required>
+
+                            </div>
+                            
+                            <div class="col-lg-12 form-group">
+
+                                <input type="text" class="form-control" id="Apt" placeholder="Apt, suite, etc. (optional)" required>
+
+                            </div>
+                            
+                            <div class="col-lg-12 form-group">
+
+                                <input type="text" class="form-control" id="exampleInputCity" placeholder="City" required>
+
+                            </div>
+                 
+                          
+                            <div class="col-4">
+                            <select id="input" onchange="countryfun()" class="custom-select mb-3" required>
+                                <option selected disabled>Country</option>
+                                <option>Egypt</option>
+                                
+                                <option>USA</option>
+                                
+                                <option>UK</option>
+                                
+                            </select>
+                            </div>
+                            
+                            <div class="col-4" id="output">
+                                <select class="custom-select mb-3" required>
+                                    <option selected disabled>State</option>
+                                
+                                </select>
+           
+                            </div>
+                            
+                            <div class="col-4 zipDiv">
+                            
+                                <input id="zipCode" type="text" class="form-control" placeholder="Zip" required maxlength="5" onkeyup="isNumber(this)">
+                                
+                            </div>
+                            
+                            <div class="col-lg-12 mb-3">
+                            
+                                <input type="tel" class="form-control" placeholder="Phone Number" required>
+                                
+                            </div>
+                            
+                          
+                            
+                            
+                            
+                            <div class="form-group form-check col-lg-12 ml-3 pb-4 custom-control custom-checkbox">
+                                
+                                <input type="checkbox" class="custom-control-input" id="customCheck2" required>
+                                
+                                <label class="custom-control-label" for="customCheck2"><span class="font-weight-bold text-dark mySpan">I agree to the </span> Trems of Use and Conditions of Sale - Privacy Policy</label>
+                              
+                            </div>
+                            
+                                    
+                                
+
+                            
+                            
+                            
+                            <div class="col-xl-6 pb-4">
+                                
+                                <a href="#" class=" text-primary backLink "> <i class="fas fa-chevron-left"></i>
+                                Return to Package Selection
+                                </a>
+                            
+                            </div>
+                            
+                            
+                            <div class="col-xl-6 ">
+
+                                <button type="submit" class="btn btn-primary payBtn text-center">Continue to Payment</button>
+                                
+                            </div>
+ 
+                            </div>
+                        
+                    </form>
+
+                </div>
+                
+                <div class="col-lg-6 layDiv mt-3">
+                
+                    <div class="row d-flex justify-content-between align-items-center ">
+                    
+                        <div class="col-9 subTotal">
+                            
+                            <div class="proImg">
+                            
+                                <img class="product" src="images/1.jpg" align="left">
+                            
+                            
+                                <p>Pet Lap - Join Health Tub (Subscribtion)</p>
+                                
+                            </div>
+                 
+                        </div>
+                        
+                        <div class="totalPrice">
+                            
+                            <span class="oldNum">$35</span>
+                            <span class="newNum">$31</span>
+                        
+                        </div>
+                    </div>
+ 
+                    <hr>
+                    
+                    
+                                    
+                    <div class="row d-flex justify-content-between align-items-center ">
+                    
+                         <div class="col-10 subTotal">
+                            
+                            <div class="proImg">
+                            
+                                <img class="product" src="images/2.jpg" align="left">
+                            
+                            
+                                <p>Extra Chance to win $2,000 of products</p>
+                                
+                            </div>
+                 
+                        </div>
+                        
+                       <div class="totalPrice">
+                            
+                            
+                            <span class="newNum2">Free</span>
+                        
+                        </div>
+                    </div>
+ 
+                    <hr>
+                    
+                    <div class="row d-flex justify-content-between align-items-center ">
+                    
+                        <div class="col-6 subTotal">Subtotal</div>
+                        
+                        <div class="totalPrice">
+                        $75.97</div>
+                    
+                    </div>
+                    
+                    <div class="row d-flex justify-content-between align-items-center">
+                    
+                        <div class="col-6 subTotal">Shipping</div>
+                        
+                        <div class="totalPrice">
+                        Free</div>
+                    
+                    </div>
+                    
+                    
+                    <hr>
+                    
+                    <div class="row d-flex justify-content-between align-items-center">
+                    
+                        <div class="col-6 subTotal">Total</div>
+                        
+                        <div class="totalPrice font-weight-bold">
+                        $75.97</div>
+                    
+                    </div>
+                    
+                    
+                    <hr>
+                    
+                    <div class="text-center">
+                    
+                        <p class="shipDesc"><span class="higligt">STOCK UPDATE: </span>Due to extreme demand shipping times may be extended: Perdicted Shipping date - 7th August</p>
+                    
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+                
+            </div>
+
+        </section>
+        
+        <!-- 
+            -----------End Of Form Sec. --------------
+        -->
+		
+		<footer class="footer">
+        
+            <div class="lists text-center pt-5 pb-4">
+     
+      
+                           <a class="footerLink" href="#">home</a>
+
+                           <a class="footerLink"     href="#">shipping & return</a>
+      
+                           <a class="footerLink"     href="#">contact us</a>
+      
+                           <a class="footerLink"     href="#">privacy</a>
+      
+                           <a class=" footerLink"     href="#">terms & conditions</a>
+            
+            </div>
+            
+            
+            <div class="icons text-center">
+                
+                <i class="fab fa-facebook-square social-ico"></i>
+                
+                <i class="fab fa-twitter-square social-ico"></i>
+                
+                <i class="fab fa-instagram social-ico"></i>
+                
+                <i class="fab fa-youtube social-ico"></i>
+            
+            </div>
+            
+            <div class="text-center pb-5">
+            
+                <p class="footer-desc">2019 ©  <a href="https://www.thepetlabco.com">www.Thepetlabco.com</a> | All Rights Reserved</p>
+                
+            </div>
+            
+            
+        
+        </footer>
+		
+		
+		
+		
+		
+		
+		
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/index.js"></script>
+		
+	</body>
+</html>

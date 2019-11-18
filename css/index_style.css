@@ -1,0 +1,314 @@
+*
+{
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+body
+{
+    font-family: sans-serif;
+}
+
+.nav-logo
+{
+    font-weight: bolder;
+}
+
+.nav-lis
+{
+    font-weight: 600;
+    color: black;
+}
+
+.cart
+{
+    font-size: 20px;
+}
+
+/*---------------- End of Navbar ----------------*/
+
+
+
+
+.blue-pal
+{
+    color: #169BD7;
+}
+
+.blue-pay
+{
+    color: #253B80;
+}
+
+.img-pp
+{
+    width: 20px;
+    height: 20px;
+}
+
+.or-line
+{
+    font-family: sans-serif;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 14px;
+    max-width: 400px;
+    position:relative;
+    color: gray;
+}
+
+.or-line:before
+{
+    content: "";
+    display:block;
+    width: 175px;
+    height:1px;
+    background: gray ;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -2;
+}
+
+.or-line:after
+{
+    content: "";
+    display:block;
+    width: 175px;
+    height:1px;
+    background: gray ;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -2;
+    }
+
+.span-or
+{
+    background: #fff
+}
+
+.label-check
+{
+    font-weight: 100;
+    color: gray;
+    font-size: 14;
+}
+
+
+.backLink
+{
+    font-size: 10px;
+    padding-bottom: 20px;
+}
+
+.payBtn
+{
+    margin-left: 0px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button 
+{ 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.custom-control-label
+{
+    font-size: 12px !important;
+    padding-top: 3px;
+    color: gray;
+}
+
+.mySpan
+{
+    font-size: 12px;
+    letter-spacing: -1px;
+}
+
+
+
+@media screen and (max-width:1201px)
+{
+    .payBtn
+    {
+        width:100%  !important;
+        padding: 10px 0px;
+        margin-left: 0px;
+    }
+    .myBtn
+    {
+        width:100%  !important;
+        padding: 10px 0px;
+        margin-left: 0px;
+    }
+    .backLink
+    {
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+    
+    .proImg p
+    {
+        font-size: 10px;
+    }
+
+    .shipDesc
+    {
+        font-size: 10px;
+    }
+    
+
+}
+
+
+.codeVal
+{
+    visibility: hidden;
+    color: red;
+    background-color: rgba(255,51,51,0.5)
+}
+
+
+.layDiv
+{
+    background-color: #fafafa;
+}
+
+
+
+/*------------------- End of Form ----------------*/
+
+.footer
+{
+    background-color: black;
+    color: white !important;
+}
+
+.footerLink
+{
+    color: white !important;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 0px 5px;
+    text-decoration: none;
+}
+.footerLink:hover
+{
+    text-decoration: none;
+}
+
+@media screen and (max-width:852px)
+{
+    .footerLink
+    {
+        font-size: 10px;
+    }
+    
+
+}
+
+.social-ico
+{
+    padding:  0px 5px 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.icons i:nth-child(1):hover
+{
+    color: #2f55a4;
+}
+
+.icons i:nth-child(2):hover
+{
+    color: #00acee;
+}
+
+.icons i:nth-child(3):hover
+{
+    color: #C13584;
+}
+
+.icons i:nth-child(4):hover
+{
+    color: #c4302b;
+}
+ 
+.footer-desc a:hover
+{
+    text-decoration: none;
+}
+
+/*------------------------------*/
+
+
+.product
+{
+    width: 60px;
+    height: 60px;
+    margin: 10px 5px 10px 0px;
+    border: 1px solid gray;
+}
+
+.proImg p 
+{
+    font-size: 12px;
+    padding-top: 30px;
+}
+
+
+.oldNum
+{
+    text-decoration: line-through;
+    padding-right: 5px;
+}
+
+
+
+.totalPrice
+{
+    padding-right: 20px;
+}
+
+.subTotal
+{
+    padding-left: 15px;
+}
+
+.shipDesc
+{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.higligt
+{
+    color: red;
+    letter-spacing: -0.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
